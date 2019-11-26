@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <%- include('./includes/head', { siteTitle: themeConfig.siteName }) %>
+  </head>
+  <body>
+    <!-- start: main -->
+    <div class="main animated">
+      
+      <%- include('./includes/header') %>
+
+<div class="autopagerize_page_element">
+  <div class="content">
+
+      
+            <!-- start: .articles -->
+            <%- include('./includes/post-list-archives') %>
+            <!-- end: .articles -->
+
+            <%- include('./includes/pagination') %>
+      
+
+  </div>
+</div>
+
+    </div>
+    <!-- end: #main -->
+
+    <%- include('./includes/footer') %>
+  </body>
+</html>

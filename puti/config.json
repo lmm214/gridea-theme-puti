@@ -1,0 +1,72 @@
+{
+  "name": "puti",
+  "version": "0.0.1",
+  "author": "",
+  "repository": "https://i.immmmm.com/post/gridea-theme-puti/",
+  "customConfig": [
+    {
+      "name": "github",
+      "label": "Github",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "twitter",
+      "label": "Twitter",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "instagram",
+      "label": "instagram",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "send-o",
+      "label": "telegram",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "weibo",
+      "label": "weibo",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "feed",
+      "label": "feed",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "feed链接地址"
+    },
+    {
+      "name": "valineID",
+      "label": "appId",
+      "group": "Valine 评论配置",
+      "value": "",
+      "type": "input",
+      "note": "请输入appId"
+    },
+    {
+      "name": "valineKey",
+      "label": "appKey",
+      "group": "Valine 评论配置",
+      "value": "",
+      "type": "input",
+      "note": "请输入appKey"
+    }
+  ]
+}

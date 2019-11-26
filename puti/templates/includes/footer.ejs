@@ -1,0 +1,47 @@
+<div class="footer">
+  <div class="bitcron_nav">
+    <% menus.forEach(function(menu) { %>
+    <a href="<%= menu.link %>" class="menu">
+      <%= menu.name %>
+    </a>
+    <% }); %>
+  </div>
+
+  <div class="powered_by">
+    <a href="https://www.caicai.me" target="_blank">Designed by CaiCai,</a><a href="https://gridea.dev/" target="_blank">Powered by Gridea.</a>
+  </div>
+
+  <div class="footer_slogan">
+    <img src="<%= themeConfig.domain %>/media/images/2019-11-13-font.svg" alt="把生命浪费在美好的事物上">
+  </div>
+</div>
+
+<!--字体渲染 & 统计-->
+<script src="<%= themeConfig.domain %>/media/js/sii0bgt.js" async=""></script>
+<script type="text/javascript" src="<%= themeConfig.domain %>/media/js/2019-11-13-fonts.js"></script>
+
+<!--电信运营商，整天用 iframe 的方式给用户弹广告 参考:http://en.wikipedia.org/wiki/Framekiller（by fenng）-->
+<style>html{display:none;}</style>
+
+<script>
+  if( self == top ) {
+    document.documentElement.style.display = 'block' ;
+  } else {
+    top.location = self.location ;
+  }
+  jQuery(document).ready(function($){
+    <!-- bigfootjs 控制-->
+    var bigfoot = $.bigfoot({
+      actionOriginalFN: "hide",
+      positionContent: "true"
+    });
+    <!--新窗口打开链接 by 林木木-->
+    $('.post_content a:not(:has(img)),.author-name a,.footer a').click (function() {
+        var location_href = window.location.href.replace(/.*:\/\/(.*)\/.*/,'$1')
+        var click_href = $(this).attr('href').replace(/.*:\/\/(.*)(\/|)$/,'$1').replace(/^(.*)\/.*/,'$1');
+        if ( location_href != click_href )
+            $(this).attr('target','_blank');
+
+    });
+  });
+</script>

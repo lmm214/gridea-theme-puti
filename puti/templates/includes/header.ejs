@@ -1,0 +1,15 @@
+<div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title"><a href="<%= themeConfig.domain %>"><img src="<%= themeConfig.domain %>/media/images/2019-11-13-logo.svg" alt=""></a></div>
+    <div class="description">
+      <p class="sub_title">Stay hungry, stay foolish.</p>
+      <div class="my_socials">
+        <% ['instagram','send-o','twitter','weibo','github'].forEach((item) => { %>
+          <% if (site.customConfig[item]) { %>
+            <a href="<%= site.customConfig[item] %>" class="translate-effect" target="_blank"><i class="fa fa-<%= item %>"></i></a>
+          <% } %>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+</div>
